@@ -1,0 +1,121 @@
+
++++++++++++++++++++++++++++++++ Global Symbol Table +++++++++++++++++++++++++++++++
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                  t0                null                   4                   0                null                int 
+                test                   1                    4                   4                null                int 
+                main                null                   0                   8              retVal           function 
+
++++++++++++++++++++++++++++++++ main Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+              retVal                null                   4                   0                null                int 
+                  t1                null                   4                   4                null                int 
+             arr_int                null                  80                   8                null              array 20 int 
+                  t2                null                   4                  88                null                int 
+               arr_d                null                 344                  92                null              array 43 double 
+                  t3                null                   4                 436                null                int 
+                   i                   0                    4                 440                null                int 
+                  t4                null                   4                 444                null                int 
+                   n                   9                    4                 448                null                int 
+                  t5                null                   4                 452                null                int 
+                  t6                null                   4                 456                null                int 
+                  t7                null                   4                 460                null                int 
+                  t8                null                   4                 464                null                int 
+                  t9                null                   4                 468                null                int 
+                 t10                null                   4                 472                null                int 
+                 t11                null                   4                 476                null                int 
+                 t12                null                   4                 480                null                int 
+                 t13                null                   4                 484                null                int 
+                 t14                null                   8                 488                null             double 
+                 t15                null                   8                 496                null             double 
+                 t16                null                   8                 504                null             double 
+                 t17                null                   8                 512                null             double 
+                 t18                null                   4                 520                null                int 
+            timepass                  90                    4                 524                null                int 
+                 t19                null                   4                 528                null                int 
+                 t20                null                   4                 532                null                int 
+                 t21                null                   4                 536                null                int 
+                 t22                null                   4                 540                null                int 
+                 t23                null                   4                 544                null                int 
+                 t24                null                   4                 548                null                int 
+                 t25                null                   4                 552                null                int 
+                 t26                null                   4                 556                null                int 
+                 t27                null                   4                 560                null                int 
+                 t28                null                   4                 564                null                int 
+                 t29                null                   4                 568                null                int 
+                 t30                null                   8                 572                null             double 
+                 t31                null                   8                 580                null             double 
+                 t32                null                   8                 588                null             double 
+                 t33                null                   8                 596                null             double 
+  0) t0 = 1
+  1) main : 
+  2) t1 = 20
+  3) t2 = 43
+  4) t3 = 0
+  5) t4 = 9
+  6) t5 = 0
+  7) i = t5
+  8) if i < n goto 14
+  9) goto 20
+ 10) goto 20
+ 11) t6 = i
+ 12) i = i + 1
+ 13) goto 8
+ 14) t7 = i * 4
+ 15) t8 = arr_int[t7]
+ 16) t9 = 1
+ 17) t10 = i + t9
+ 18) arr_int[t7] = t10
+ 19) goto 11
+ 20) i = n
+ 21) t11 = 0
+ 22) if i >= t11 goto 28
+ 23) goto 35
+ 24) goto 35
+ 25) t12 = i
+ 26) i = i - 1
+ 27) goto 21
+ 28) t13 = i * 8
+ 29) t14 = arr_d[t13]
+ 30) t15 = 0.100000
+ 31) t16 = int2dbl(i)
+ 32) t17 = t16 * t15
+ 33) arr_d[t13] = t17
+ 34) goto 25
+ 35) t18 = 90
+ 36) t19 = timepass * timepass
+ 37) t20 = timepass + t19
+ 38) timepass = t20
+ 39) t21 = 0
+ 40) i = t21
+ 41) if i < n goto 47
+ 42) goto 53
+ 43) goto 53
+ 44) t22 = i
+ 45) i = i + 1
+ 46) goto 41
+ 47) t23 = i * 4
+ 48) t24 = arr_int[t23]
+ 49) t25 = 1
+ 50) t26 = i + t25
+ 51) arr_int[t23] = t26
+ 52) goto 44
+ 53) i = n
+ 54) t27 = 0
+ 55) if i >= t27 goto 61
+ 56) goto 68
+ 57) goto 68
+ 58) t28 = i
+ 59) i = i - 1
+ 60) goto 54
+ 61) t29 = i * 8
+ 62) t30 = arr_d[t29]
+ 63) t31 = 0.100000
+ 64) t32 = int2dbl(i)
+ 65) t33 = t32 * t31
+ 66) arr_d[t29] = t33
+ 67) goto 58
+ 68) return timepass

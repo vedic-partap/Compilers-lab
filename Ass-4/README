@@ -1,0 +1,38 @@
+Name : Vedic Partap
+Roll No. : 16CS10053
+
+Assignment 4 : Parser for tinyC
+
+Important Point 
+1. Sometimes ass4_16CS10053.c get overwritten (mainly at the first time) by the bison so the backcode for this file is 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*
+
+Name : Vedic Partap
+Roll No. : 16CS10053
+
+*/
+#include <stdio.h>
+#include "y.tab.h"
+int main(){
+  	extern int yydebug;
+	yydebug=1;
+	int val=yyparse();
+	printf("\n+---------------------------------------+\n\n");
+	if(!val)
+		printf("Successs :)\n\n");
+	else
+		printf("Error :(\n\n");
+	return 0;
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+3. use `make` to compile and run. 
+
+4. The output will be the stack elements and the operations and errors. At last the the final outcome is printed.
+
+5. To remove the debugging output comment yydebug=1 in the main function. 

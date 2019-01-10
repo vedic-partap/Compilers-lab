@@ -1,0 +1,131 @@
+
++++++++++++++++++++++++++++++++ Global Symbol Table +++++++++++++++++++++++++++++++
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+               hello                null                   0                   0                   a           function 
+             kaiseho                null                   0                   0                   a           function 
+                 lol                null                   0                   0                   a           function 
+dont_know_what_to_do                null                   0                   0                   a           function 
+                main                null                   0                   0              retVal           function 
+
++++++++++++++++++++++++++++++++ hello Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                   a                null                   4                   0                null                int 
+                   b                null                   4                   4                null                int 
+              retVal                null                   4                   8                null                int 
+                 t22                null                   4                  12                null                int 
+
++++++++++++++++++++++++++++++++ kaiseho Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                   a                null                   4                   0                null                int 
+                   b                null                   4                   4                null                int 
+                   c                null                   4                   8                null                int 
+              retVal                null                   4                  12                null                int 
+                 t18                null                   4                  16                null                int 
+                 t19                null                   4                  20                null                int 
+                 t20                null                   4                  24                null                int 
+                 t21                null                   4                  28                null                int 
+
++++++++++++++++++++++++++++++++ lol Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                   a                null                   4                   0                null                int 
+                   b                null                   4                   4                null                int 
+                   c                null                   4                   8                null                int 
+              retVal                null                   4                  12                null                int 
+                 t13                null                   4                  16                null                int 
+                 t14                null                   4                  20                null                int 
+                 t15                null                   4                  24                null                int 
+                 t16                null                   4                  28                null                int 
+                 t17                null                   4                  32                null                int 
+
++++++++++++++++++++++++++++++++ dont_know_what_to_do Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                   a                null                   4                   0                null                int 
+                   b                null                   4                   4                null                int 
+                   c                null                   4                   8                null                int 
+                   d                null                   4                  12                null                int 
+              retVal                null                   8                  16                null             double 
+                  t6                null                   4                  24                null                int 
+                  t7                null                   4                  28                null                int 
+                  t8                null                   4                  32                null                int 
+                  t9                null                   8                  36                null             double 
+                 t10                null                   4                  44                null                int 
+                 t11                null                   8                  48                null             double 
+                 t12                null                   8                  56                null             double 
+
++++++++++++++++++++++++++++++++ main Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+              retVal                null                   4                   0                null                int 
+                  t0                null                   4                   4                null                int 
+                   a                   6                    4                   8                null                int 
+                  t1                null                   4                  12                null                int 
+                   b                   7                    4                  16                null                int 
+                  t2                null                   4                  20                null                int 
+                   c                   8                    4                  24                null                int 
+                  t3                null                   4                  28                null                int 
+                   d                   9                    4                  32                null                int 
+                  t4                null                   8                  36                null             double 
+                  t5                null                   4                  44                null                int 
+  0) main : 
+  1) t0 = 6
+  2) t1 = 7
+  3) t2 = 8
+  4) t3 = 9
+  5) param a
+  6) param b
+  7) param c
+  8) param d
+  9) t4 = call dont_know_what_to_do, 4
+ 10) t5 = 0
+ 11) return t5
+ 12) dont_know_what_to_do : 
+ 13) param a
+ 14) param b
+ 15) param c
+ 16) t6 = call kaiseho, 3
+ 17) param a
+ 18) param b
+ 19) t7 = call hello, 2
+ 20) param a
+ 21) param b
+ 22) param c
+ 23) t8 = call lol, 3
+ 24) t9 = 2.000000
+ 25) t10 = 7
+ 26) t11 = int2dbl(t10)
+ 27) t12 = t9 * t11
+ 28) return t12
+ 29) lol : 
+ 30) param a
+ 31) param b
+ 32) param c
+ 33) t13 = call kaiseho, 3
+ 34) param a
+ 35) param b
+ 36) t14 = call hello, 2
+ 37) t15 = 3
+ 38) t16 = 4
+ 39) t17 = t15 + t16
+ 40) return t17
+ 41) kaiseho : 
+ 42) param a
+ 43) param b
+ 44) t18 = call hello, 2
+ 45) t19 = 3
+ 46) t20 = 9
+ 47) t21 = t19 + t20
+ 48) return t21
+ 49) hello : 
+ 50) t22 = 1
+ 51) return t22

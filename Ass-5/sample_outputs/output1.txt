@@ -1,0 +1,105 @@
+
++++++++++++++++++++++++++++++++ Global Symbol Table +++++++++++++++++++++++++++++++
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+          time_pass2                null                   0                   0                temp           function 
+           time_pass                null                   0                   0             int_var           function 
+                main                null                   0                   0              retVal           function 
+
++++++++++++++++++++++++++++++++ time_pass2 Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+                temp                null                   4                   0                null                int 
+            elements                null                   4                   4                null                int 
+              retVal                null                   0                   8                null               void 
+                  t0                null                   4                   8                null                int 
+                  t1                null                   4                  12                null                int 
+
++++++++++++++++++++++++++++++++ time_pass Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+             int_var                null                   4                   0                null                int 
+            elements                null                   4                   4                null                int 
+               value                null                   4                   8                null                int 
+              retVal                null                   4                  12                null                int 
+                   i                null                   4                  16                null                int 
+                  t2                null                   4                  20                null                int 
+              passes                   0                    4                  24                null                int 
+                  t3                null                   4                  28                null                int 
+
++++++++++++++++++++++++++++++++ main Symbol Table +++++++++++++++++++++++++++++++ 
+
+                Name       Initial Value                Size              Offset        Nested Table              Type
+
+              retVal                null                   4                   0                null                int 
+                  t4                null                   4                   4                null                int 
+                   n                   3                    4                   8                null                int 
+                  t5                null                   4                  12                null                int 
+                   i                   0                    4                  16                null                int 
+                  t6                null                   4                  20                null                int 
+                  t7                null                   4                  24                null                int 
+                  t8                null                   4                  28                null                int 
+                  t9                null                   4                  32                null                int 
+                 t10                null                   4                  36                null                int 
+             int_var                   3                    4                  40                null                int 
+              result                null                   4                  44                null                int 
+                 t11                null                   4                  48                null                int 
+                 t12                null                   0                  52                null               void 
+                 t13                null                   4                  52                null                int 
+                 t14                null                   4                  56                null                int 
+                 t15                null                   4                  60                null                int 
+                 t16                null                   4                  64                null                int 
+             int_var                  11                    4                  68                null                int 
+              result                null                   4                  72                null                int 
+                 t17                null                   4                  76                null                int 
+                 t18                null                   0                  80                null               void 
+  0) time_pass2 : 
+  1) temp = elements
+  2) t0 = 1
+  3) t1 = temp + t0
+  4) temp = t1
+  5) return
+  6) time_pass : 
+  7) t2 = 0
+  8) if int_var >= value goto 11
+  9) goto 14
+ 10) goto 14
+ 11) t3 = passes
+ 12) passes = passes + 1
+ 13) goto 14
+ 14) return passes
+ 15) main : 
+ 16) t4 = 3
+ 17) t5 = 0
+ 18) if i < n goto (null)
+ 19) goto (null)
+ 20) t6 = i
+ 21) i = i + 1
+ 22) t7 = 1
+ 23) t8 = i + t7
+ 24) i = t8
+ 25) t9 = 0
+ 26) if n >= t9 goto 29
+ 27) goto 42
+ 28) goto 47
+ 29) t10 = 3
+ 30) t11 = 3
+ 31) param int_var
+ 32) param t11
+ 33) t12 = call time_pass2, 2
+ 34) t13 = 4
+ 35) t14 = 3
+ 36) param int_var
+ 37) param t13
+ 38) param t14
+ 39) t15 = call time_pass, 3
+ 40) result = t15
+ 41) goto (null)
+ 42) t16 = 11
+ 43) t17 = 11
+ 44) param int_var
+ 45) param t17
+ 46) t18 = call time_pass2, 2

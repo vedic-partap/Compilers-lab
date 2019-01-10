@@ -1,0 +1,13 @@
++++++ Assignment 5 +++++
++++++ Vedic Partap +++++
+
+1. There is sample output file in the sample_output folder
+2. In makefile @ is used so that command is not shown in the terminal, only outputs will be displayed.
+
++++++ How To Run +++++
+$ make
+
++++++ Clean +++++
+$ make clean
+
+on 	`make` command 5 test case will be tested and the output will be stored in output<?>.txt. 

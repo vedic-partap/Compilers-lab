@@ -1,0 +1,26 @@
+Grammar
+
+
+statement-list:
+	statement ;
+	statement-list statement
+
+statement:
+	primary-expression = expression
+	
+primary-expression:
+	ID
+
+constant-expression:
+	INTEGER
+	DOUBLE
+
+expression:
+	expression + expression
+	expression - expression
+	expression * expression
+	expression / expression
+	- expression
+	( expression )
+	primary-expression
+	constant-expression
